@@ -42,7 +42,7 @@ export default function ImageScrollbar({ data }) {
       style={{ overflow: "hidden" }}
     >
       {data.map((item) => (
-        <Box width="910px" itemID={item.id} overflow="hidden" p="1">
+        <Box width="910px" key={item.id} itemID={item.id} overflow="hidden" p="1">
           <Image
             alt="property"
             placeholder="blur"
